@@ -1,0 +1,145 @@
+footer{
+    width: 100%; padding: 6.7rem 0 0 0;
+    .container{
+        flex-wrap: wrap;
+    }
+    
+    .left{
+        text-align: left; margin-bottom: 5rem; max-width: 22%; flex: 0 0 22%;
+    }
+    .middle{
+        text-align: center; margin-bottom: 5rem; max-width: 56%; flex: 0 0 56%;
+        .logo{
+            display: block;
+        }
+        p{
+             font-size: 1.4rem; color: #715f53; line-height: 3rem; width: 50%; display: inline-block;
+            &.reg{
+                 margin-top: 3rem; width: 55%;
+            }
+        }
+    }
+    .right{
+        text-align: right; margin-bottom: 5rem; max-width: 22%; flex: 0 0 22%;
+        h2{
+            &::after{
+                left: auto; right: 0;
+            }
+        }
+        .ft_menu{
+            li{
+                img{
+                    margin-left: 2rem;
+                }
+            }
+        }
+        .social{
+            margin-top: 2rem;
+            li{
+                margin-right: 1.2rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+        .custom_button{
+            margin-top: 2rem;
+        }
+    }
+    h2{
+        color: #000; font-size: 1.8rem; font-weight: normal; padding-bottom: .8rem; position: relative; text-transform: uppercase;
+        &::after{
+            width: 4.5rem; height: 2px; background-color: #715f53; position: absolute; bottom: 0; left: 0; content: "";
+        }
+    }
+    .ft_menu{
+        width: 100%; margin-top: 3.5rem;
+        li{
+            width: 100%; margin-bottom: 8px;
+            a{
+                color: #715f53; font-size: 1.4rem; padding-left: 2.6rem; position: relative;
+                &::before{
+                    width: 10px; height: 10px; background-image: url(../images/nav_arrow.png); position: absolute; top: 0; left: 0; bottom: 0; margin: auto; content: ""; background-size: contain;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .logo{
+        margin-bottom: 4rem;
+    }
+}
+
+.copyright{
+    width: 100%; padding: 2rem 0; background-color: #302d2d; color: #fff; font-size: 1.5rem; text-align: center;
+    a{
+        color: #fff; text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width:1600px){
+    footer{
+        .left{
+            flex: 0 0 26%; max-width: 26%;
+        }
+        .right{
+            flex: 0 0 26%; max-width: 26%;
+        }
+        .middle{
+            flex: 0 0 48%; max-width: 48%;
+            p{
+                width: 100%;
+                &.reg{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1400px){
+    footer{
+        .left{
+            flex: 0 0 30%; max-width: 30%;
+        }
+        .right{
+            flex: 0 0 30%; max-width: 30%;
+        }
+        .middle{
+            flex: 0 0 40%; max-width: 40%;
+            p{
+                width: 100%;
+                &.reg{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    footer{
+        .container{
+            align-items: flex-start;
+        }
+        .left{
+            flex: 0 0 50%; max-width: 50%;  order: 2;
+        }
+        .right{
+            flex: 0 0 50%; max-width: 50%;   order: 3;
+           
+        }
+        .middle{
+            flex: 0 0 100%; max-width: 100%; order: 1;
+            p{
+                width: 100%;
+                &.reg{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}
